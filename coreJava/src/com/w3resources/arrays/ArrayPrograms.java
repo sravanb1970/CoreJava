@@ -210,5 +210,34 @@ public class ArrayPrograms {
 		System.out.println("Array values are - " + Arrays.toString(newArray));
 	}
 	
+	
+	public void createNewArray() {
+		int[] arr = new int[]{25,54,25,65,86,65};
+		int[] arr1 = new int[arr.length+1];
+
+		int temp =0;
+		int j;
+		for(int i=0;i<arr.length;i++) {
+			temp =0;
+			for(j=0;j<arr1.length;j++) {			
+				
+				if(arr1[j] != arr[i] && i != j ) {
+					arr1[temp] = arr[i];
+					temp++;
+				}
+
+			}
+			
+
+		}
+		System.out.println(Arrays.toString(arr));
+		System.out.println(Arrays.toString(arr1));
+	}
+	
+	public static void main(String[] args) {
+		ArrayPrograms s = new ArrayPrograms();
+		s.createNewArray();
+	}
+	
 
 }

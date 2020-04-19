@@ -2,15 +2,35 @@ package com.oops.concepts;
 
 import java.util.Arrays;
 
-public class College {
+public class College extends School{
 	
 	public int collegeId;
 	public String collegeName;
 	public String location;
 	public int strength; 
+	public static int number;
+
+	public College() {
+	 	number++;
+	 	System.out.println("Number is - " + number);
+		System.out.println("College class created internally");
+	}
+	
+	public College(int collegeId, String collegeName) {
+	 	number++;
+	 	System.out.println("Number is - " + number);
+		System.out.println("College class created internally");
+		this.collegeId = collegeId;
+		this.collegeName = collegeName;
+		
+	}
 
 	//1 - graduation - need location, distance from city 
 	
+	
+	public void sampleMethod() {
+		System.out.println("College Name is - " + collegeName);
+	}
 //1 - inheritance  
 	public void getCollegeDetails() {
 		System.out.println("College Name - " + collegeName);
