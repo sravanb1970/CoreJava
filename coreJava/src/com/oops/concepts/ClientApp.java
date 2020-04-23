@@ -1,5 +1,7 @@
 package com.oops.concepts;
 
+import com.constructors.examples.Account;
+
 public class ClientApp{
 
 	
@@ -31,6 +33,13 @@ public class ClientApp{
 		degreeCollege.displayCollegeDetails();
 		degreeCollege.sampleMethod();
 		
+		
+	//	College cl1 = new DegreeCollege();//valid 
+	//	DegreeCollege c1 = new College();//invalid
+			
+		
+
+
 	}
 	
 	
